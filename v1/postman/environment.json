@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "http://gateway.lanf0rd.cloud.okteto.net",
 			"enabled": true
 		}
 	],
