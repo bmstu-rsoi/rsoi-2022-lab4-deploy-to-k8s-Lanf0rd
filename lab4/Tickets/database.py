@@ -8,9 +8,9 @@ class Data_Base:
         self.create_tables()
 
     def connect(self):
-        self.connection = psycopg2.connect(dbname = "ticket",
-                                           user = "program",
-                                           password = "test",
+        self.connection = psycopg2.connect(dbname = "postgres",
+                                           user = "postgres",
+                                           password = "postgres",
                                            host = "postgres")
 
 
