@@ -8,5 +8,5 @@ spec:
     ports:
       - name: {{ .Values.bonus.name }}-listener
         protocol: TCP
-        port: 8050
+        port: {{ .Values.bonus.port }}
         targetPort: {{ .Values.bonus.name }}

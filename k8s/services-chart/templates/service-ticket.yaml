@@ -8,5 +8,5 @@ spec:
     ports:
       - name: {{ .Values.ticket.name }}-listener
         protocol: TCP
-        port: 8070
+        port: {{ .Values.ticket.port }}
         targetPort: {{ .Values.ticket.name }}

@@ -8,5 +8,5 @@ spec:
     ports:
       - name: {{ .Values.flight.name }}-listener
         protocol: TCP
-        port: 8060
+        port: {{ .Values.flight.port }}
         targetPort: {{ .Values.flight.name }}

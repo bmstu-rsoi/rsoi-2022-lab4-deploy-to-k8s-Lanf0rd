@@ -8,5 +8,5 @@ spec:
     ports:
       - name: {{ .Values.gateway.name }}-listener
         protocol: TCP
-        port: 8080
+        port: {{ .Values.gateway.port }}
         targetPort: {{ .Values.gateway.name }}
