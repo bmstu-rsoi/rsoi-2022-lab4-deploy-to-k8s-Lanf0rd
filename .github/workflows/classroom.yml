@@ -30,7 +30,6 @@ jobs:
           docker build ./lab4/Bonuses/ -t lanf0rd/lanf0rdrep:bonus
           docker build ./lab4/Tickets/ -t lanf0rd/lanf0rdrep:ticket
           docker build ./lab4/Gateway/ -t lanf0rd/lanf0rdrep:gateway
-          sleep 20
 
       - name: Push images
         run: |
@@ -38,7 +37,6 @@ jobs:
           docker push lanf0rd/lanf0rdrep:bonus
           docker push lanf0rd/lanf0rdrep:ticket
           docker push lanf0rd/lanf0rdrep:gateway
-          sleep 20
 
       - name: Deploy
         run: |
@@ -49,7 +47,7 @@ jobs:
           helm delete services
           sleep 10
           helm install services ./k8s/services-chart
-          sleep 20
+          sleep 60
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
