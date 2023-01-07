@@ -1,0 +1,34 @@
+gateway:
+  service:
+    port: 8080
+    image:
+      name: gateway
+      version: "1.0"
+    isGateway: true
+
+flight:
+  service:
+    port: 8060
+    image:
+      name: flight
+      version: "1.0"
+    database:
+      name: flight
+
+ticket:
+  service:
+    port: 8070
+    image:
+      name: ticket
+      version: "1.0"
+    database: 
+      name: ticket
+
+bonus:
+  service:
+    port: 8050
+    image:
+      name: bonus
+      version: "1.0"
+    database: 
+      name: bonus
