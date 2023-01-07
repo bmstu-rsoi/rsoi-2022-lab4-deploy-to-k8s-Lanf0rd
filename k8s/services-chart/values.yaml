@@ -1,3 +1,4 @@
+dockerRegistry: lanf0rd/lanf0rdrep
 gateway:
   service:
     port: 8080

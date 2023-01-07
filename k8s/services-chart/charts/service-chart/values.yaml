@@ -1,4 +1,6 @@
-domain: Lanf0rd.cloud.okteto.net
+domain: lanf0rd.cloud.okteto.net
+dockerRegistry: lanf0rd/lanf0rdrep
+
 service:
   port:
   isGateway:
